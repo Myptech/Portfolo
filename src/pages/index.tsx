@@ -28,73 +28,73 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Года опыта в разработке", value: "3+" },
+  { label: "Используемых технологий", value: "5+" },
+  { label: "✨ Клиентов по всему миру", value: "15+" },
 ];
 
 const projects = [
   {
     title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    description: "Cовременное портфолио, демонстрирующее проекты UX и дизайн-путь",
+    image: "/assets/unqueue.png",
+    href: "https://raveena-amarasiriwardena.vercel.app/",
   },
   {
     title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
+    description: "Cовременное портфолио, демонстрирующее проекты UX",
+    image: "/assets/photo2.avif",
+    href: "https://www.stevewolf.co/",
   },
   {
     title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
+    description: "Красочные, 3D-изображения сменяют друг друга в формате слайд-шоу,",
+    image: "/assets/photo3.avif",
     href: "https://translatebot.app/",
   },
   {
     title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
+    description: "Онлайн-портфолио которая использует монохромную цветовую палитру и несколько забавных фильтров.",
+    image: "/assets/photo4.jpg",
     href: "https://www.wrona.com/",
   },
   {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
+    title: "Code and Core",
+    description: "Веб сайт CODE AND CORE",
+    image: "/assets/photo5.jpg",
     href: "https://github.com/wendoj/portfolio",
-  },
+  }, 
 ];
 
 const services = [
   {
-    service: "Frontend Development",
+    service: "Разработка и интеграция",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
+      "Переведите дизайн в код, создавая адаптивное и функциональное портфолио. Используйте современные веб-технологии для обеспечения быстрого и плавного взаимодействия с пользователем.",
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "Дизайн и макетирование",
     description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
+      "Разработайте структуру и визуальный стиль портфолио. Обратите внимание на удобство навигации, читаемость и эстетику. Здесь важно создать гармоничное сочетание визуальных и текстовых элементов.",
     icon: Frame,
   },
   {
-    service: "SEO Optimization",
+    service: "Тестирование и публикация",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
+      "Проверьте работоспособность всех элементов, убедитесь в корректности отображения на разных устройствах и браузерах. После тестирования опубликуйте портфолио и продвигайте его среди потенциальных клиентов или работодателей.",
     icon: SearchCheck,
   },
   {
-    service: "Responsive Design",
+    service: "Сбор и подготовка контента",
     description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
+      "Подготовьте все необходимые материалы: изображения, описания проектов, отзывы клиентов и другие элементы, которые подчеркивают ваш профессионализм и достижения.",
     icon: MonitorSmartphone,
   },
   {
-    service: "Backend Development",
+    service: "Анализ и планирование",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
+      "Определите цели портфолио, целевую аудиторию и ключевые проекты, которые хотите продемонстрировать. Решите, какие технологии и платформы будут использоваться для создания портфолио.",
     icon: Eye,
   },
 ];
@@ -106,7 +106,6 @@ export default function Home() {
   const [current, setCurrent] = useState<number>(0);
   const [count, setCount] = useState<number>(0);
 
-  // handle scroll
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
@@ -190,9 +189,9 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Быстро</span>
+              <span className={styles.pill}>Удобно</span>
+              <span className={styles.pill}>Красиво</span>
             </div>
             <div>
               <h1
@@ -202,11 +201,11 @@ export default function Home() {
                 data-scroll-direction="horizontal"
               >
                 <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
-                  Hello, I&apos;m
+                Как сделать портфолио
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                и покорить мир.
                 </span>
               </h1>
               <p
@@ -215,8 +214,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                Создавайте лучшие веб-сайты с помощью шаблонов, реагирующих на мобильные устройства, удобного перетаскивания и неограниченной настройки.
               </p>
             </div>
             <span
@@ -225,16 +223,16 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="Myp_tech@mail.ru" passHref>
                 <Button>
-                  Get in touch <ChevronRight className="ml-1 h-4 w-4" />
+                  Создать портфолио <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
               <Button
                 variant="outline"
                 onClick={() => scrollTo(document.querySelector("#about"))}
               >
-                Learn more
+                Узнать подрбнее
               </Button>
             </span>
 
@@ -244,7 +242,7 @@ export default function Home() {
                 isScrolled && styles["scroll--hidden"],
               )}
             >
-              Scroll to discover{" "}
+              Прокрутите для волшебства{" "}
               <TriangleDownIcon className="mt-1 animate-bounce" />
             </div>
           </div>
@@ -269,19 +267,16 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
               <Link
                 href="https://create.t3.gg/"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              Добро пожаловать на наш сайт — ваш идеальный инструмент для создания впечатляющих и профессиональных портфолио.
+               Мы помогаем дизайнером, художникам, фотографам, разработчикам и творческим специалистам с 2021 года создавать визуально
+                привлекательные и функциональные портфолио, которые идеально отражают их талант и стиль.
+                 Наши решения просты в использовании и подходят для любого уровня подготовки. Начните свой путь к успеху с нами!
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -320,14 +315,13 @@ export default function Home() {
           </div>
           <div data-scroll data-scroll-speed=".4" className="my-64">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
-              ✨ Projects
+              ✨ Проекты
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
-              Streamlined digital experiences.
+              Сборник сайтов портфолио
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve worked on a variety of projects, from small websites to
-              large-scale web applications. Here are some of my favorites:
+              Тут собрано несколько сайтов портфолио для вашего вдохновления
             </p>
 
             {/* Carousel */}
@@ -375,7 +369,7 @@ export default function Home() {
                 <span className="font-semibold">
                   {current} / {count}
                 </span>{" "}
-                projects
+                Проекты
               </div>
             </div>
           </div>
@@ -401,15 +395,15 @@ export default function Home() {
             >
               <div className="flex flex-col py-6 xl:p-6">
                 <h2 className="text-4xl font-medium tracking-tight">
-                  Need more info?
+                  Нужна помощь?
                   <br />
                   <span className="text-gradient clash-grotesk tracking-normal">
-                    I got you.
+                    Мы всегда рады помочь.
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
-                  Here are some of the services I offer. If you have any
-                  questions, feel free to reach out.
+                  Здесь небольшая последовательность
+                  разработки сайта портфолио.
                 </p>
               </div>
               {services.map((service) => (
@@ -439,16 +433,17 @@ export default function Home() {
             className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
           >
             <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s work{" "}
-              <span className="text-gradient clash-grotesk">together.</span>
+            Воплотите свои идеи в жизнь с помощью сайта {" "}
+              <span className="text-gradient clash-grotesk">Portfolio Maker.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
+            Выбрав шаблон, вы можете полностью изменить его: 
+            менять цвета, подключать свои шрифты, менять местами 
+            элементы и добавлять новые ― ваше творчество ничем не ограничивается.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
+            <a href="t.me/myp_tech" >
+              <Button className="mt-6">Создать сайт</Button>
+            </a>
           </div>
         </section>
       </div>
@@ -459,7 +454,6 @@ export default function Home() {
 function Gradient() {
   return (
     <>
-      {/* Upper gradient */}
       <div className="absolute -top-40 right-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"

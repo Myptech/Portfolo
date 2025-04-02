@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "@/styles/Container.module.css";
 
-/* Framer motion variants */
 const opacity = {
   initial: {
     opacity: 0,
@@ -24,10 +23,10 @@ const slideUp = {
 };
 
 const words = [
+  "Привет",
+  "Как ваши дела ?",
   "Hello",
-  "Bonjour",
-  "Ciao",
-  "Olà",
+  "How are you?",
   "やあ",
   "Hallå",
   "Guten tag",

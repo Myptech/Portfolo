@@ -5,9 +5,9 @@
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
-    "name": "WendoJ",
-    "short_name": "WendoJ",
-    "description": "Full-stack website developer and TypeScript enthusiast.",
+    "name": "Porfolio Maker",
+    "short_name": "Porfolio Maker",
+    "description": "Веб сайт для разработки портфолио",
     "icons": [
         {
             "src": "/icon-192x192.png",
